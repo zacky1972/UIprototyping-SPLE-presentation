@@ -1,8 +1,5 @@
 [
-    "index-1.md",
-    "index-2.md",
-    "index-3.md",
-    "index-4.md",
+    "index.md",
     "background-1.md",
     "background-2.md",
     "background-3.md",
@@ -27,6 +24,6 @@
     "implementation-2-2.md",
     "implementation-2-3.md",
     "implementation-2-4.md",
-    "index-4.md",
+    "index.md",
     "future-work-1.md"
 ]
