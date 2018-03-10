@@ -24,7 +24,9 @@ files = [
 
 options_hash.each do |path, options|
   files.each do |file|
-    proxy "#{path}/${file}", "/#{file}", :locals => options
+    options[:rootURL] = path
+    proxy "#{path}/#{file}", "/#{file}", :locals => {locals: options}
+  end
 end
 ```
 
