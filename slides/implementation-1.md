@@ -25,7 +25,9 @@ files = [
 options_hash.each do |path, options| # すべての可変性の組み合わせを表示
   files.each do |file|
     options[:rootURL] = path
-    proxy "#{path}/#{file}", "/#{file}", :locals => {locals: options} # 動的ページ機能で生成。パラメータとして options を渡す
+    
+    # 動的ページ機能で生成。パラメータとして options を渡す
+    proxy "#{path}/#{file}", "/#{file}", :locals => {locals: options} 
   end
 end
 ```
